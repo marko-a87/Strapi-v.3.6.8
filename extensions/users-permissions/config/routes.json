@@ -1,0 +1,58 @@
+{
+  "routes": [
+    
+      {
+        
+      "method": "GET",
+      "path": "/users",
+      "handler": "User.find",
+      "config": {
+        "policies": []
+      }
+      },
+    {
+      "method": "POST",
+      "path": "/users/create",
+      "handler": "create.create",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "POST",
+      "path": "/users/update/:id",
+      "handler": "update.update",
+      "config": {
+        "policies": []
+      }
+    },
+    
+
+    {
+      "method": "POST",
+      "path": "/users/balance/:id",
+      "handler": "balance.incrementBal",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/users/lives/:id",
+      "handler": "lives.incrementLives",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/users/highScore/:id",
+      "handler": "highScore.incrementSco",
+      "config": {
+        "policies": []
+      }
+    }
+    
+  ]
+}
